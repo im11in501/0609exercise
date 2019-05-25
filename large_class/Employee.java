@@ -16,13 +16,14 @@ public class Employee
         _officeExtensionNumber = officeExtensionNumber;
     }
 
-    public String getTelephoneNumber()
-    {
-        return "(" + _officeAreaCode + ") " + _officeNumber + "-" + _officeExtensionNumber;
-    }
-
     public String getName()
     {
         return _name;
     }
+}
+
+public String getTelephoneNumber(String officeAreaCode, String officeNumber,
+                    String officeExtensionNumber)
+{
+	return "(" + officeAreaCode + ") " + officeNumber + "-" + officeExtensionNumber;
 }
